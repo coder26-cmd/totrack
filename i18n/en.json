@@ -1,0 +1,15 @@
+{
+  "welcome": {
+    "welcome-definition": "Project Tracking App",
+    "welcome-create-btn-text": "Create a New Project",
+    "welcome-open-btn-text": "Open Project Dashboard"
+  },
+  "create": {
+    "title": "New Project",
+    "create-title": "Create a New Project",
+    "create-name-input": "Project Name:",
+    "create-desc-input": "Description:",
+    "create-deadline-input": "Select Deadline:",
+    "create-submit-btn": "Submit"
+  }
+}

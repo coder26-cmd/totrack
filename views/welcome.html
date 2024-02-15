@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/welcome.css">
+  <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>ToTRACK</title>
+</head>
+<body>
+  <header class="header">
+    <div class="dropdown">
+      <button class="dropbtn animate__animated animate__fadeInRight animate__fast"> 
+        <span class="fas fa-globe"></span>
+      </button>
+      <div class="dropdown-content animate__animated animate__fadeInDown animate__faster">
+        <button class="eng">English</button>
+        <button class="rus">Русский</button>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="main-title">
+      <h1 class="animate__animated animate__fadeInLeft title animate__fast">ToTRACK</h1>
+      <p class="animate__animated animate__fadeInLeft" id="welcome-definition">Приложение для отслеживания проектов</p>
+    </div>
+    <div class="buttons animate__animated animate__fadeInLeft">
+      <a class="button" href="create.html">
+        <span class="fas fa-plus"></span>
+        <span class="button-desc" id="welcome-create-btn-text">Создать новый проект</span>
+      </a>
+      <a class="button" href="main.html" id="open-btn">
+        <span class="far fa-folder-open"></span>
+        <span class="button-desc" id="welcome-open-btn-text">Открыть доску проектов</span>
+      </a>
+    </div>
+  </div>
+  <script src="../js/welcome.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="../css/kanban.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+  <title>ToTRACK</title>
+</head>
+<body>
+  <nav class="sidebar">
+    <h1 class="title-wrap animate__animated animate__fadeInLeft">
+      <a id="main-title" href="welcome.html">ToTRACK</a>
+    </h1>
+    <div class="sidebar-buttons-wrap animate__animated animate__fadeInLeft">
+      <button class="sidebar-button"><span class="fas fa-home"></span>Главная</button>
+      <p class="sidebar-desc">Отслеживание</p>
+      <button class="sidebar-button"><span class="fas fa-columns"></span>Доска</button>
+      <button class="sidebar-button"><span class="fas fa-stream"></span>В разработке</button>
+      <p class="sidebar-desc">Статистика</p>
+      <button class="sidebar-button"><span class="fas fa-check"></span>В разработке</button>
+    </div>
+    <button class="sidebar-button animate__animated animate__fadeInLeft"><span class="fas fa-cog"></span>Настройки</button>
+  </nav>
+  <div class="main">
+    <header class="header animate__animated animate__fadeInDown">
+      <select class="project-selector" id="project-select">
+        <option value="create" id="create-redirect">Создать новый проект...</option>
+      </select>
+      <div class="dropdown">
+        <button class="dropbtn animate__animated animate__fadeInRight animate__fast"> 
+          <span class="fas fa-globe"></span>
+        </button>
+        <div class="dropdown-content animate__animated animate__fadeInDown animate__faster">
+          <button class="eng">English</button>
+          <button class="rus">Русский</button>
+        </div>
+      </div>
+    </header>
+    <div class="body">
+      <div class="widget main-page animate__animated animate__fadeInLeft" style="display: block;">
+        <p class="greeting" id="greet">Добро пожаловать!</p>
+        <p class="motivation" id="phrase">[мотивавция]</p>
+        <p id="prj-description" class="stuff-desc"></p>
+        <p id="prj-days" class="stuff-desc"></p>
+      </div>
+      <div class="widget board animate__animated animate__fadeInLeft animate__fast" id="kanban-board-widget" style="display: none;">
+        <div class="create-task">
+          <h5 id="main-board-create-instruction">Создать новую задачу:</h5>
+          <input type="text" class="board-new-task-name" id="board-new-task-text" maxlength="75" minlength="1">
+          <button id="main-board-submit-new">Подтвердить</button>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <h4 class="column-title"><span class="fas fa-clipboard-list"></span>Нужно сделать</h4>
+            <ul class="tasks" id="toDo">
+            </ul>
+          </div>
+          <div class="column">
+            <h4 class="column-title"><span class="far fa-clock"></span> В процессе</h4>
+            <ul class="tasks" id="inProgress">
+            </ul>
+          </div>
+          <div class="column done">
+            <h4 class="column-title"><span class="fas fa-check-double"></span>Сделано</h4>
+            <ul class="tasks" id="done">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="widget gantt" style="display: none;">Скоро!</div>
+      <div class="widget progress" style="display: none;">Скоро!</div>
+      <div class="widget settings" style="display: none;">
+        <h1 id="create-title" class="animate__animated animate__fadeInLeft animate__faster">Редактировать</h1>
+        <form class="create-form animate__animated animate__fadeInLeft animate__fast">
+          <p class="desc" id="create-name-input">Название проекта:</p>
+          <input type="text" class="project-name input-el" id="project-name-inp" maxlength="50"/>
+          <p class="desc" id="create-desc-input">Описание (по желанию):</p>
+          <textarea maxlength="256" rows="7" cols="25" class="input-el" id="project-desc-text"></textarea>
+          <p class="desc" id="create-deadline-input">Срок:</p>
+          <input type="date" class="project-date input-el" id="project-date-picker"/>
+          <button id="create-submit-btn" type="button">Подтвердить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../js/menu.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js'></script>
+  <script src="../js/kanban.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/form.js"></script>
+  <script src="../js/settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="../css/create.css" type="text/css" rel="stylesheet">
+  <link href="../css/dropdown.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+  <title>Новый проект - ToTRACK</title>
+</head>
+<body>
+  <header class="header">
+    <div class="dropdown">
+      <button class="dropbtn animate__animated animate__fadeInRight animate__fast"> 
+        <span class="fas fa-globe"></span>
+      </button>
+      <div class="dropdown-content animate__animated animate__fadeInDown animate__faster">
+        <button class="eng">English</button>
+        <button class="rus">Русский</button>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <h1 id="create-title" class="animate__animated animate__fadeInLeft animate__faster">Создать новый проект</h1>
+    <form class="create-form animate__animated animate__fadeInLeft animate__fast">
+      <p class="desc" id="create-name-input">Название проекта:</p>
+      <input type="text" class="project-name input-el" id="project-name-inp" maxlength="50"/>
+      <p class="desc" id="create-desc-input">Описание (по желанию):</p>
+      <textarea maxlength="256" rows="7" cols="25" class="input-el" id="project-desc-text"></textarea>
+      <p class="desc" id="create-deadline-input">Срок:</p>
+      <input type="date" class="project-date input-el" id="project-date-picker"/>
+      <button id="create-submit-btn" type="button">Подтвердить</button>
+    </form>
+  </div>
+  <script src="../js/form.js"></script>
+  <script src="../js/create.js"></script>
+
+</body>
+</html>

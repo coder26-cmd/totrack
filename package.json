@@ -1,0 +1,14 @@
+{
+  "name": "totrack",
+  "version": "1.0.0",
+  "description": "Project Tracking App",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Konstantin Zeygman",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.1"
+  }
+}

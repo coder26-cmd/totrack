@@ -1,0 +1,15 @@
+{
+  "welcome": {
+    "welcome-definition": "Приложение для отслеживания проектов",
+    "welcome-create-btn-text": "Создать новый проект",
+    "welcome-open-btn-text": "Открыть доску проекта"
+  },
+  "create": {
+    "title": "Создание нового проекта",
+    "create-title": "Создание нового проекта",
+    "create-name-input": "Название проекта:",
+    "create-desc-input": "Описание",
+    "create-deadline-input": "Конечный срок:",
+    "create-submit-btn": "Подтвердить"
+  }
+}

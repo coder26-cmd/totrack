@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  font-family: Nunito, sans-serif;
+}
+
+button{
+  border: none;
+}
+
+body{
+  background-color: #70C1FF;
+}
+
+.main{
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 246, 246);
+}
+
+.title{
+  font-size: 70px;
+}
+
+.main-title, .buttons{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-definition{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a.button{
+  border-width: 3px 3px 3px 3px;
+  border-style: solid;
+  border-color: #0A95FF;
+  border-bottom-color: #008BF5;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 400px;
+  text-align: center;
+  margin: 5px;
+  font-size: 27px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all .4s ease;
+  color: rgb(43, 43, 43);
+}
+
+.button:hover {
+  background-color: white;
+  opacity: 0.9;
+  color: #000;
+}
+
+.fa-plus, .fa-folder-open{
+  margin-right: auto;
+  margin-left: 0;
+}
+
+
+.button-desc{
+  margin: 0 auto;
+}

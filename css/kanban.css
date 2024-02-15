@@ -1,0 +1,67 @@
+#kanban-board-widget{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  height: 90%;
+}
+
+.column{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #d2d7e4;
+  width: 250px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks{
+  padding: 0;
+  height: 100%;
+}
+
+.column-title{
+  text-align: center;
+  font-size: 25px;
+}
+
+li.task{
+  border: 1px solid black;
+  list-style: none;
+  margin-top: 10px;
+  padding: 5px;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+}
+
+.create-task{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#main-board-create-instruction{
+  font-size: 22px;
+}
+
+#main-board-submit-new{
+  font-size: 17px;
+}
+
+.board-new-task-name{
+  font-size: 17px;
+}
+
+li.gu-mirror{
+  height: auto !important;
+  width: 238px !important;
+}
